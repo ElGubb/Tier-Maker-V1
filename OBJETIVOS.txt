@@ -1,0 +1,11 @@
+----------------------- PRIORITARIOS ---------------------------
+Crear tiers (CRUD)
+Crear usuarios/objetos (CRUD)
+Asignar 1 (un) tier a cada usuario/objeto (Relación uno a muchos) -> Modelo BBDD
+Guardar una tier list (CRUD)
+Acceder a una tier list
+
+
+------------------------ SECUNDARIOS ---------------------------
+Exportar tier list como imagen
+Drag and drop de usuarios/objetos a cada tier
