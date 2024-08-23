@@ -5,6 +5,8 @@ Asignar 1 (un) tier a cada usuario/objeto (Relación uno a muchos) -> Modelo BBD
 Guardar una tier list (CRUD)
 Acceder a una tier list
 
+Impedir crear un tier que ya existe (repetido)
+
 
 ------------------------ SECUNDARIOS ---------------------------
 Exportar tier list como imagen

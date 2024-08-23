@@ -3,18 +3,16 @@ import './Tiers.css'
 
 function Tiers() {
 
-    interface Tier {
-        name : string
-    } 
-
-const [input, setInput] = useState<Tier>();
-const [tiers, setTiers] = useState<Tier>();
+const [input, setInput] = useState<string | null>(null);
+const [tiers, setTiers] = useState<Array<string | null>>([]);
+const tierInput : HTMLInputElement | null = document.getElementById('tierInput') as HTMLInputElement;
 
 const addTier = () => {
-if(input.name !== ""){
+if(input !== ""){
     console.log("INPUT", input);
-    setTiers(input);
+    tiers.push(input);
     setInput("")
+    tierInput.value = ""
     return;
     }
     alert("Empty Field")
@@ -26,7 +24,7 @@ return (
 <>
     <div>
     <h2>Tiers Component {tiers}</h2>
-    <input onChange={(e) => setInput(e.target.value)} />
+    <input id="tierInput" onChange={(e) => setInput(e.target.value)} />
     <button onClick={addTier}>Añadir Tier</button>
     <div>{rows}</div>
     </div>
