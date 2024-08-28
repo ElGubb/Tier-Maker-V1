@@ -4,7 +4,7 @@ function Users() {
 
   return (
     <>
-      <div>
+      <div className='users_component'>
       <h2>Users Component</h2>
       </div>
     </>

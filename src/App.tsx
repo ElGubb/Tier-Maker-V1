@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='app_container flex justify-center container mx-auto'>
       <Tiers></Tiers>
       <Users></Users>
       </div>

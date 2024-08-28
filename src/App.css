@@ -1,1 +1,10 @@
+.app_container>div {
+    width: 50%;
+    min-width: 500px;
+}
 
+@media screen (max-width: 768px) {
+    .app_container>div {
+        width: 100%;
+    }
+}
