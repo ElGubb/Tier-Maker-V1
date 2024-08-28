@@ -24,7 +24,7 @@ if(input?.tier !== ""){
     alert("Empty Field")
 }
 const deleteTier = (id:number) => {
-    const differentValues = tiers.filter((value:any) => value.id !== id);
+    const differentValues = tiers.filter((value:Tiers | null) => value!.id !== id);
     console.log("filtrado", differentValues)
     setTiers(differentValues);
 }
